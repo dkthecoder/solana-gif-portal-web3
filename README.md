@@ -1,5 +1,7 @@
 # buildspace Solana GIF Portal Project
 
+Starter project taken from; https://github.com/buildspace/gif-portal-starter
+
 ### **Welcome 👋**
 To get started with this course, clone this repo and follow these commands:
 
