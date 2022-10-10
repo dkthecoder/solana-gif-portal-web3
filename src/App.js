@@ -7,7 +7,7 @@ const TWITTER_HANDLE = 'Itsiswhatitis2';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 
 const App = () => {
-  //state
+  // State
   const [walletAddress, setWalletAddress] = useState(null);
 
   // Actions
@@ -19,6 +19,7 @@ const App = () => {
         'Connected with Public Key:',
         response.publicKey.toString()
       );
+
       /*
        * Set the user's publicKey in state to be used later!
        */
@@ -28,16 +29,16 @@ const App = () => {
     }
   };
 
-  /*
-   * Let's define this method so our code doesn't break.
-   * We will write the logic for this next!
-   */
-  const connectWallet = async () => {};
+  const connectWallet = async () => {
+    const { solana } = window;
+  
+    if (solana) {
+      const response = await solana.connect();
+      console.log('Connected with Public Key:', response.publicKey.toString());
+      setWalletAddress(response.publicKey.toString());
+    }
+  };
 
-  /*
-   * We want to render this UI when the user hasn't connected
-   * their wallet to our app yet.
-   */
   const renderNotConnectedContainer = () => (
     <button
       className="cta-button connect-wallet-button"
