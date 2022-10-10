@@ -6,6 +6,13 @@ import './App.css';
 const TWITTER_HANDLE = 'Itsiswhatitis2';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 
+const TEST_GIFS = [
+  'https://i.giphy.com/media/tIwqmLZDYSaZyEEslc/giphy.webp',
+	'https://media3.giphy.com/media/L71a8LW2UrKwPaWNYM/giphy.gif?cid=ecf05e47rr9qizx2msjucl1xyvuu47d7kf25tqt2lvo024uo&rid=giphy.gif&ct=g',
+	'https://media4.giphy.com/media/AeFmQjHMtEySooOc8K/giphy.gif?cid=ecf05e47qdzhdma2y3ugn32lkgi972z9mpfzocjj6z1ro4ec&rid=giphy.gif&ct=g',
+	'https://i.giphy.com/media/26gJAaPZKuQutL1mg/giphy.webp'
+]
+
 const App = () => {
   // State
   const [walletAddress, setWalletAddress] = useState(null);
@@ -62,10 +69,8 @@ const App = () => {
 			{/* This was solely added for some styling fanciness */}
 			<div className={walletAddress ? 'authed-container' : 'container'}>
         <div className="header-container">
-          <p className="header">🖼 GIF Portal</p>
-          <p className="sub-text">
-            View your GIF collection in the metaverse ✨
-          </p>
+          <p className="header">🖼 Meme Squad</p>
+          <p className="sub-text">Memes in the metaverse ✨ (for the squad)</p>
           {/* Add the condition to show this only if we don't have a wallet address */}
           {!walletAddress && renderNotConnectedContainer()}
         </div>
