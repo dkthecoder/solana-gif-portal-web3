@@ -4,7 +4,7 @@ Starter project taken from; https://github.com/buildspace/gif-portal-starter
 
 Contract address: https://explorer.solana.com/tx/24botnMf4joUkcqXC8jr3tPCr97Au4sLDzWuEEceq4qADNTYETt6BXAqdDBQfqa69Ypn4AYmpeDxQMsJpvS5AW9W?cluster=devnet
 
-![Screenshot](url "Title")
+![Screenshot](https://github.com/dkthecoder/solana-gif-portal-web3/blob/master/Screenshot%202022-10-10%20160516.png)
 
 ### **Welcome 👋**
 To get started with this course, clone this repo and follow these commands:
